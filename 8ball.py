@@ -9,16 +9,9 @@ import random
 PROMPT = "Ask a yes or no question: "
 
 def main():
-    # 1. Ask for y/n question
     question = input(PROMPT)
-
-    # while the question is not an empty string
     while question != "":
-
-        # 2. Assign to a generated a random int between 1 & 6
-        randnum = random.randint(1,6)
-
-        # 3. Print a statement associated with that randnum
+        randnum = random.randint(1, 6)
         if randnum == 1:
             print("I think that it shall be!")
         if randnum == 2:
@@ -30,10 +23,11 @@ def main():
         if randnum == 5:
             print("A hard no")
         if randnum == 6:
-            print("I got nothing")
+            print("Absolutely!")
 
         question = input(PROMPT)
 
 
 if __name__ == '__main__':
     main()
+    
